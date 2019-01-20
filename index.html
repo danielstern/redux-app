@@ -1,0 +1,33 @@
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+<body class="container">
+    <title>
+        A special sweater for every special dog
+    </title>
+    <h1>
+        The special dog sweater company
+    </h1>
+
+    <label>Dog Type</label>
+    <select onchange="store.dispatch(mutations.changeDog(this.value))">
+        <option>PUG</option>
+        <option>CORGI</option>
+    </select>
+
+    <label>Sweater Type</label>
+    <select onchange="store.dispatch(mutations.changeSweater(this.value))">
+        <option>TURTLENECK</option>
+        <option>HOODIE</option>
+    </select>
+
+    <label>Sweater Color</label>
+    <select onchange="store.dispatch(mutations.changeColor(this.value))">
+        <option>CHARTREUSE</option>
+        <option>FUSCHIA</option>
+        <option>GOLDENROD</option>
+    </select>
+    <div id="app"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.1/redux.js"></script>
+    <script src="index.js"></script>
+</body>
