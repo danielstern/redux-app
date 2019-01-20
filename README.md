@@ -6,3 +6,4 @@ A very basic Redux application
 To run using Node, 
 
 `npm install && npm start`
+
